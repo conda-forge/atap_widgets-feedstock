@@ -1,11 +1,11 @@
-About atap_widgets
-==================
+About atap_widgets-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/atap_widgets-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/Australian-Text-Analytics-Platform/atap_widgets
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/atap_widgets-feedstock/blob/main/LICENSE.txt)
 
 Summary: Interactive widgets used by the Australian Text Analytics Platform
 
