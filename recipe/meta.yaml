@@ -1,5 +1,5 @@
 {% set name = "atap_widgets" %}
-{% set version = "0.4.0" %}
+{% set version = "0.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/atap_widgets-{{ version }}.tar.gz
-  sha256: 0a280b51934128eb281bd394874e04ace39d077af4b0a50043e02f7a62839ab5
+  sha256: 8e114843eb0dfeaed1352b6aea15367a9cd9b175778c5d21277fe2dbff04cdc9
 
 build:
   noarch: python
