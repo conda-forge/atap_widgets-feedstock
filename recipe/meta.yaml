@@ -6,22 +6,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/atap_widgets-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/atap_widgets-{{ version }}.tar.gz
   sha256: 8e114843eb0dfeaed1352b6aea15367a9cd9b175778c5d21277fe2dbff04cdc9
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
     - poetry
     - setuptools
-    - python >=3.8,<3.12
+    - python {{ python_min }}
   run:
-    - python >=3.8,<3.12
+    - python >={{ python_min }},<3.12
     - bokeh >=2.0,<3.0
     - ipywidgets >=8.0,<9.0
     - pandas >=1.3,<2.0
@@ -36,6 +36,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/Australian-Text-Analytics-Platform/atap_widgets
